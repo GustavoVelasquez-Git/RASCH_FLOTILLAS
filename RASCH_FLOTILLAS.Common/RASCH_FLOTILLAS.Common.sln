@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RASCH_FLOTILLAS.Common", "RASCH_FLOTILLAS.Common\RASCH_FLOTILLAS.Common.csproj", "{34E2438D-BB71-4D20-B51F-A2D87DC9B1E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RASCH_FLOTILLAS", "RASCH_FLOTILLAS\RASCH_FLOTILLAS.csproj", "{7A8E083A-BC4F-4447-BFF2-02C104C42A85}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34E2438D-BB71-4D20-B51F-A2D87DC9B1E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34E2438D-BB71-4D20-B51F-A2D87DC9B1E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34E2438D-BB71-4D20-B51F-A2D87DC9B1E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34E2438D-BB71-4D20-B51F-A2D87DC9B1E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A8E083A-BC4F-4447-BFF2-02C104C42A85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A8E083A-BC4F-4447-BFF2-02C104C42A85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A8E083A-BC4F-4447-BFF2-02C104C42A85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A8E083A-BC4F-4447-BFF2-02C104C42A85}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {02B1A752-AFBB-4D15-8FA2-4FAD77630A81}
+	EndGlobalSection
+EndGlobal
