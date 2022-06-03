@@ -51,7 +51,7 @@
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
     <script src="//cdn.datatables.net/1.12.0/js/jquery.dataTables.min.js"></script>
-    <script src="/js/deleteDialog.js"></script>
+    <script src="~/js/deleteDialog.js"></script>
 
     <script type="text/javascript">
         $(document).ready(function () {
@@ -65,7 +65,7 @@
                 ]
             });
             // Delete item
-            sc_deleteDialog.openModal('deleteItem', true, 'btnYesDelete', '/Busines/Delete/', false);
+            sc_deleteDialog.openModal('deleteItem', true, 'btnYesDelete', '/Business/Delete/', false);
         });
     </script>
 }

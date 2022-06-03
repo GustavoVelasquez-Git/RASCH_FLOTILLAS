@@ -20,6 +20,7 @@ namespace RASCH_FLOTILLAS.Data.Entities
         [Required(ErrorMessage = "El campo {0} es obligatorio.")]
         public string LastName { get; set; }
 
+
         [Display(Name = "Empresa")]
         [Required(ErrorMessage = "El campo {0} es obligatorio.")]
         public Business Business { get; set; }

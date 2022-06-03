@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace RASCH_FLOTILLAS.Controllers
 {
-    //[Authorize(Roles = "Admin")]
+    [Authorize(Roles = "Admin")]
     public class BusinessController : Controller
     {
         private readonly DataContext _context;
