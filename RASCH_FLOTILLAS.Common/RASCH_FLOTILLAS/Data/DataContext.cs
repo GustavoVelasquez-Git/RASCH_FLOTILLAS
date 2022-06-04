@@ -13,11 +13,13 @@ namespace RASCH_FLOTILLAS.Data
         }
 
         public DbSet<Business> Business { get; set; }
+        public DbSet<Brands> Brands { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<Business>().HasIndex(x => x.Description).IsUnique();
+            modelBuilder.Entity<Brands>().HasIndex(x => x.Description).IsUnique();
 
         }
     }
