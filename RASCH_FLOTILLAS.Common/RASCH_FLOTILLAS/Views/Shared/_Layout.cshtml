@@ -17,61 +17,56 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    
                     <ul class="navbar-nav flex-grow-1">
                         @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
                         {
+                            <li class="nav-item dropdown">
 
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="bi bi-gear"></i> Catalogos
+                                </a>
+                                <div class="dropdown-menu">
 
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="VehiclesTypes" asp-action="Index">Tipos de Vehículos</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="VehiclesTypes" asp-action="Index">Tipos de Vehículos</a>
+
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Brands" asp-action="Index">Marcas</a>
+
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Fuels" asp-action="Index">Combustibles</a>
+
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Holograms" asp-action="Index">Hologramas</a>
+
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Keys" asp-action="Index">Llaves</a>
+
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="BrandsGps" asp-action="Index">Marcas de GPS</a>
+
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Owners" asp-action="Index">Propiedad del Vehículo</a>
+
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="InsuranceCompanys" asp-action="Index">Aseguradoras de Vehículos</a>
+
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="PaymentMethods" asp-action="Index">Metodos de Pago</a>
+
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="States" asp-action="Index">Entidades Federativas</a>
+
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="TypeMaintenances" asp-action="Index">Tipos de Mantenimieto</a>
+
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Services" asp-action="Index">Tipos de Servicios</a>
+
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="WorkShops" asp-action="Index">Talleres</a>
+
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="VehiclesStatus" asp-action="Index">Estado del Vehículo</a>
+
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Business" asp-action="Index">Empresas</a>
+
+                                </div>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Brands" asp-action="Index">Marcas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Fuels" asp-action="Index">Combustibles</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Holograms" asp-action="Index">Hologramas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Keys" asp-action="Index">Llaves</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="BrandsGps" asp-action="Index">Marcas de GPS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Owners" asp-action="Index">Propiedad del Vehículo</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="InsuranceCompanys" asp-action="Index">Aseguradoras de Vehículos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="PaymentMethods" asp-action="Index">Metodos de Pago</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="States" asp-action="Index">Entidades Federativas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="TypeMaintenances" asp-action="Index">Tipos de Mantenimieto</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Services" asp-action="Index">Tipos de Servicios</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="WorkShops" asp-action="Index">Talleres</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="VehiclesStatus" asp-action="Index">Estado del Vehículo</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Business" asp-action="Index">Empresas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Users" asp-action="Index">Usuarios</a>
-                            </li>
-                        }
+
+                                <li>
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Users" asp-action="Index">Usuarios</a>
+                                </li>
+                         }
                     </ul>
+                    
                     <ul class="nav navbar-nav navbar-right">
                         @if (User.Identity.IsAuthenticated)
                         {
