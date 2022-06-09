@@ -115,14 +115,14 @@ namespace RASCH_FLOTILLAS.Controllers
                 return NotFound();
             }
 
-            Brands brands = await _context.Brands
+            Service service = await _context.Services
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (brands == null)
+            if (service == null)
             {
                 return NotFound();
             }
 
-            _context.Brands.Remove(brands);
+            _context.Services.Remove(service);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
