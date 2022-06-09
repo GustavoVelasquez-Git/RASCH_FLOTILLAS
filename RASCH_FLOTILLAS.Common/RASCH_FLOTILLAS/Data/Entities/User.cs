@@ -15,10 +15,15 @@ namespace RASCH_FLOTILLAS.Data.Entities
         [Required(ErrorMessage = "El campo {0} es obligatorio.")]
         public string FirstName { get; set; }
 
-        [Display(Name = "Apellidos")]
+        [Display(Name = "Apellido Paterno")]
         [MaxLength(50, ErrorMessage = "El campo {0} no puede tener más de {1} carácteres.")]
         [Required(ErrorMessage = "El campo {0} es obligatorio.")]
         public string LastName { get; set; }
+
+        //[Display(Name = "Apellidos")]
+        //[MaxLength(50, ErrorMessage = "El campo {0} no puede tener más de {1} carácteres.")]
+        //[Required(ErrorMessage = "El campo {0} es obligatorio.")]
+        //public string MaternalSurName { get; set; }
 
 
         [Display(Name = "Empresa")]
